@@ -3,7 +3,7 @@ const express = require('express');
 const productRoute = require('../src/routes/products.route'); 
 const homeRoute = require('../src/routes/home.route'); // Điều chỉnh đường dẫn
 // Điều chỉnh đường dẫn
-const database = require('../src/config/database'); // Điều chỉnh đường dẫn
+// const database = require('../src/config/database'); // Điều chỉnh đường dẫn
 
 const app = express();
 app.use(express.json()); // Middleware để parse JSON body
@@ -15,7 +15,7 @@ app.use(express.json()); // Middleware để parse JSON body
 
 // Gắn Product Routes vào ứng dụng Express chính
 // Mọi request đến /api/products sẽ được xử lý bởi productRoutes
-app.use('/products', productRoute);
+// app.use('/products', productRoute);
 app.use('/', homeRoute);
 
 
