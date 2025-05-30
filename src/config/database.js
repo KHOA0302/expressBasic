@@ -6,7 +6,7 @@ const sequelize = new Sequelize(
   process.env.DB_PASSWORD || "0302",
   {
     host: process.env.DB_HOST || "172.17.240.1",
-    dialect: "mysql2", // Chỉ định đây là MySQL
+    dialect: "mysql", // Chỉ định đây là MySQL
   }
 );
 
