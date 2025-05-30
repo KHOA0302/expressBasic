@@ -5,8 +5,6 @@ const sequelize = require("../config/database");
 
 const router = express.Router(); // Khởi tạo một Express Router
 
-app.use(express.json())
-
 router.get('/product', productController.getAllProducts); // URL sẽ là /api/products
 
 // Xuất ứng dụng Express để Vercel/Netlify có thể sử dụng như một hàm
