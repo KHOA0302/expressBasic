@@ -7,6 +7,7 @@ const sequelize = new Sequelize(
   {
     host: process.env.DB_HOST || "172.17.240.1",
     dialect: "mysql", // Chỉ định đây là MySQL
+    dialectModule: require('mysql2'),
   }
 );
 
