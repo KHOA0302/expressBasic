@@ -17,6 +17,7 @@ app.use(express.json()); // Middleware để parse JSON body
 // Mọi request đến /api/products sẽ được xử lý bởi productRoutes
 // app.use('/products', productRoute);
 app.use('/', homeRoute);
+app.use('/products', productRoute);
 
 
 // Route mặc định cho /api
